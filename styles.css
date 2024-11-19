@@ -1,0 +1,170 @@
+/* Global Styles */
+/* จัดตำแหน่งและเพิ่มความสมดุล */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 1500px;
+  background: linear-gradient(141deg, #1B1A55 0%, #535C91 51%, #9290C3 75%);
+    line-height: 1.6;
+    
+}
+.profile-pic {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    margin-right: 20px;
+    object-fit: cover; 
+    border: 3px solid white; 
+}
+
+/* จัดหัวข้อ */
+section {
+    margin: 20px auto; /* เพิ่มระยะห่างด้านบนและล่าง */
+    padding: 20px;
+    max-width: 800px; /* จำกัดความกว้างของเนื้อหา */
+    border-radius: 10px;
+    background-color: #ffffff; /* สีพื้นหลังขาว */
+    box-shadow: 0 4px 6px rgba(227, 7, 7, 0.1); /* เงาเบา */
+}
+header {
+   text-align: center;
+color: rgb(255, 250, 243);
+ background-color: #070F2B;
+ display: flex;
+ 
+}
+
+
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #00ff9d;
+    border-bottom: 2px solid #9290C3;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ea0707;
+    margin: 20px 0;
+    
+
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9290C3;
+    color: white;
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.hamburger {
+    font-size: 100%;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* ซ่อนปุ่มในหน้าจอใหญ่ */
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #00ff9d;
+}
+#about  {
+    background-color: #FFE5E5; /* สีชมพูอ่อน */
+}
+
+#education {
+    background-color: #FFF8E1; /* สีเหลืองอ่อน */
+}
+
+#skills {
+    background-color: #E8F5E9; /* สีเขียวอ่อน */
+}
+
+#contact {
+    background-color: #84b7db; /* สีฟ้าอ่อน */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* แสดงปุ่ม Hamburger */
+    }
+
+    .navbar {
+        display: none; /* ซ่อนเมนูในหน้าจอเล็ก */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    
+
+    .navbar li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex; /* แสดงเมนูเมื่อ Hamburger ถูกกด */
+    }
+}
+
+/* Other Sections */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.skills-card {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(243, 7, 7, 0.1);
+    transition: transform 0.2s;
+}
+
+.skills-card:hover {
+    transform: scale(1.1); /* ขยายเล็กน้อยเมื่อเลื่อนเมาส์ */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+ 
